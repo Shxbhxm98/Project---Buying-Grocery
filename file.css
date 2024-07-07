@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url('banner.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 3em;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2em;
+}
+
+section {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#products {
+    flex: 2;
+    margin-right: 2em;
+}
+
+#cart {
+    flex: 1;
+}
+
+.product {
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+.product h3 {
+    margin: 0;
+    flex: 1;
+}
+
+.product p {
+    margin: 0;
+    flex: 1;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+#payment-method {
+    margin-top: 1em;
+}
+
+#card-details {
+    margin-top: 1em;
+}
+
+#card-details label {
+    display: block;
+    margin-top: 0.5em;
+}
+
+#card-details input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#pay-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+#pay-button:hover {
+    background-color: #45a049;
+}
